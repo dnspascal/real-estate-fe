@@ -16,7 +16,7 @@ interface dataProps {
   bio?: string
 }
 
-const page = () => {
+const Page = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const { register, handleSubmit } = useForm();
   const router = useRouter();
@@ -143,4 +143,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

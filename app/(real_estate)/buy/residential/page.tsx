@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { ArrowBack } from '@mui/icons-material';
 
-const page = () => {
+const Page = () => {
     const router = useRouter();
     return (
         <main className='flex  flex-col  bg-white'>
@@ -30,4 +30,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

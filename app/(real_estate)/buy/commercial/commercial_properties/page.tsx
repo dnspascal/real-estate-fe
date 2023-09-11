@@ -4,7 +4,7 @@ import PropertyItem from '@/components/PropertyItem'
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-const page = () => {
+const Page = () => {
     const specificProperties = useSelector((state: any) => state.specificProperties.items)
 
     console.log("==============");
@@ -27,4 +27,4 @@ const page = () => {
         </main>)
 }
 
-export default page
+export default Page

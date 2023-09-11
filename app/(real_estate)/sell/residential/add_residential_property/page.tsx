@@ -3,7 +3,7 @@ import AddProperty from '@/components/AddProperty'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   const router = useRouter()
   return (
     <div className='flex items-center flex-col   h-screen  w-full'>
@@ -17,4 +17,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

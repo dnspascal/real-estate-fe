@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux';
 import { specificProperties } from "@/app/slices/specific_buying_properties";
 
 
-const page = () => {
+const Page = () => {
     const dispatch = useDispatch();
     const router = useRouter();
 
@@ -46,4 +46,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

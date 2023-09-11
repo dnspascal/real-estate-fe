@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-const page = () => {
+const Page = () => {
     return (
         <main className='flex flex-col items-center gap-y-16 py-24'>
             <span className='sm:text-3xl text-lg font-bold'>
@@ -19,4 +19,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

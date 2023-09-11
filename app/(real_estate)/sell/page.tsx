@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-const page = () => {
+const Page = () => {
   const dispatch = useDispatch()
   return (
     <div className='h-screen items-center   overflow-y-scroll flex flex-col'>
@@ -26,4 +26,4 @@ const page = () => {
   )
 }
 
-export default page 
+export default Page 
