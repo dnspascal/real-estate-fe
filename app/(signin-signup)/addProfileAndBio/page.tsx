@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 
 interface dataProps {
-  profile_picture?: [],
+  profile_picture?: undefined,
   username?: string,
   bio?: string
 }
@@ -37,9 +37,14 @@ const page = () => {
   };
 
   const submit: SubmitHandler<dataProps> = async (data: dataProps) => {
+    if (!data.profile_picture) {
+      // Throw an error
+      throw new Error("The profile_picture property is missing");
+    }
     const { region, district, confirm_password, ...others } = user
     const user2 = { ...others, address: region + district }
-    const data2 = { ...data, profile_picture: data?.profile_picture[0] }
+    const data2 = { ...data, profile_picture: data.profile_picture[0] }
+
 
     const dataToBeSent = { ...user2, ...data2 }
     const res = await axios.post("http://localhost:8000/register",
