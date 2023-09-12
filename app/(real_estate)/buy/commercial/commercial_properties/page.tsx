@@ -7,10 +7,7 @@ import { useSelector } from 'react-redux'
 const Page = () => {
     const specificProperties = useSelector((state: any) => state.specificProperties.items)
 
-    console.log("==============");
-    console.log("this is the other array of data")
-    console.log(specificProperties[0].type);
-    console.log("==============")
+    
     return (
         <main className='p-6'>
             <span>All available

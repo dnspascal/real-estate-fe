@@ -17,10 +17,7 @@ const Page = () => {
 
         const specificPropertiesData = properties.filter((i) => i.type == "commercial space",)
         dispatch(specificProperties(specificPropertiesData))
-        console.log("==============");
-        console.log(specificPropertiesData);
-        console.log("==============")
-
+        
     }
     return (
         <main className='flex flex-col '>
