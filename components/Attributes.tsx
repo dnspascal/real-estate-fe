@@ -84,8 +84,9 @@ const Attributes = () => {
      <div className='flex flex-col w-full items-center gap-y-4'>
       <p className='text-gray-700 text-xl'>What are the attributes of your property ?</p>
      {
-            property_attributes.filter((item)=>item.property_type == "commercial_space")[0].attribute.map((item)=>
-           <TextField size='medium'   className=' w-1/2' type={item.type} required label={item.name} {...register(`${item.name}`)} />
+            property_attributes.filter((item)=>item.property_type == "commercial_space")[0].attribute.map((item,index)=>
+           <TextField size='medium' key=
+           {index}  className=' w-1/2' type={item.type} required label={item.name} {...register(`${item.name}`)} />
            
             )
         }
